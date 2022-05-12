@@ -36,7 +36,7 @@ $("#form").submit(function (e) {
     let mn = $("#middleName");
     let ln = $("#lastName");
     let dob = $("#dob");
-    let gender = $("#male");
+    let gender = $("#male") || $("#female");
     let phone = $("#phone");
     let country = $("#country");
     let state = $("#state");
@@ -50,7 +50,7 @@ $("#form").submit(function (e) {
             <td>${mn.val()}</td>
             <td>${ln.val()}</td>
             <td>${dob.val()}</td>
-            <td>${gender}</td>
+            <td>${gender.val()}</td>
             <td>${country.val()}</td>
             <td>${state.val()}</td>
             <td>${lga.val()}</td>
@@ -58,12 +58,14 @@ $("#form").submit(function (e) {
         `
         $("#tbody").append(row);
         alert("user added")
+
+        document.getElementById("form").reset();
     } else {
         alert("Please fill all the fields");
-        let num = $("#tbody").childElement.length
-        $("#users").html(num);
+        
     }
 
-
 });
+
+$("#users").html($("#tbody").childElementCount);
 
