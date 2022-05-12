@@ -66,124 +66,13 @@
 
                         <div class="container-fluid">
                             <div class="row py-4">
-                                <div class="col-10">
+                                <div class="col-12">
                                     <h2><Span class="text-primary fw-bold">Good morning</Span>, <Span
                                             class="h3 fw-bold">Hanniel</Span></h3>
                                 </div>
 
-                                <div class="col-2">
-                                    <!-- Button trigger modal -->
-                                    <button type="button"
-                                        class="btn btn-outline-primary d-flex align-items-center justify-content-center border-3"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <i class="bx bx-user-plus h4 m-0 fw-bold"></i>
-                                    </button>
 
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1"
-                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-dialog-centered">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">New User</h5>
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                        aria-label="Close"></button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form id="form">
-                                                        <div class="container-fluid">
-                                                            <div class="row g-3">
-                                                                <div class="col-4">
-                                                                    <div class="form-group">
-                                                                        <label for="firstName">First
-                                                                            Name</label>
-                                                                        <input type="text" class="form-control"
-                                                                            id="firstName"
-                                                                            placeholder="Enter first name">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <div class="form-group">
-                                                                        <label for="middleName">Middle
-                                                                            Name</label>
-                                                                        <input type="text" class="form-control"
-                                                                            name="mn" id="middleName"
-                                                                            aria-describedby="emailHelp"
-                                                                            placeholder="Enter middle name">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <div class="form-group">
-                                                                        <label for="lastName">Last
-                                                                            Name</label>
-                                                                        <input type="text" class="form-control"
-                                                                            name="ln" id="lastName"
-                                                                            aria-describedby="emailHelp"
-                                                                            placeholder="Enter last name">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <select class="form-control" id="country">
-                                                                        <option value="">Country</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <select class="form-control" id="state">
-                                                                        <option value="">State</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-4">
-                                                                    <select class="form-control" id="lga">
-                                                                        <option value="">L.G.A</option>
-                                                                    </select>
-                                                                </div>
-                                                                <div class="col-5">
-                                                                    <div class="form-group">
-                                                                        <label for="dob">D.O.B</label>
-                                                                        <input type="date" class="form-control"
-                                                                            id="dob">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-7">
-                                                                    <label for="phone">Phone
-                                                                        Number</label>
-                                                                    <input type="tel" class="form-control" id="phone"
-                                                                        placeholder="Enter phone number">
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <div class="row">
-                                                                        <div class="col-6">
-                                                                            <label for="male">
-                                                                                <input type="radio" name="gender"
-                                                                                    value="m" id="male">
-                                                                                Male
-                                                                            </label>
-                                                                        </div>
-                                                                        <div class="col-6">
-                                                                            <label for="female">
-                                                                                <input type="radio" name="gender"
-                                                                                    value="f" id="female">
-                                                                                Female
-                                                                            </label>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-6 d-flex">
-                                                                    <button
-                                                                        class="btn btn-primary ms-auto fw-bold px-5" type="submit">
-                                                                        Save
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 mt-5 py-5">
+                                <div class="col-12 py-5">
                                     <div class="row gap-4 justify-content-center">
                                         <div class="col-lg-2 card bg-primary p-4">
                                             <div class="d-flex justify-content-between align-items-center">
@@ -211,6 +100,101 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-12">
+                                    <form id="form">
+                                        <div class="container-fluid">
+                                            <div class="row g-3">
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="firstName">First
+                                                            Name</label>
+                                                        <input type="text" class="form-control"
+                                                            id="firstName"
+                                                            placeholder="Enter first name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="middleName">Middle
+                                                            Name</label>
+                                                        <input type="text" class="form-control"
+                                                            name="mn" id="middleName"
+                                                            aria-describedby="emailHelp"
+                                                            placeholder="Enter middle name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="form-group">
+                                                        <label for="lastName">Last
+                                                            Name</label>
+                                                        <input type="text" class="form-control"
+                                                            name="ln" id="lastName"
+                                                            aria-describedby="emailHelp"
+                                                            placeholder="Enter last name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="form-control" id="country">
+                                                        <option value="">Country</option>
+                                                        <option value="nigeria">Nigeria</option>
+                                                        <option value="usa">U.S.A</option>
+                                                        <option value="china">China</option>
+                                                        <option value="korea">Korea</option>
+                                                        <option value="england">England</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="form-control" id="state">
+                                                        <option value="">State</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-4">
+                                                    <select class="form-control" id="lga">
+                                                        <option value="">L.G.A</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-5">
+                                                    <div class="form-group">
+                                                        <label for="dob">D.O.B</label>
+                                                        <input type="date" class="form-control"
+                                                            id="dob">
+                                                    </div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <label for="phone">Phone
+                                                        Number</label>
+                                                    <input type="tel" class="form-control" id="phone"
+                                                        placeholder="Enter phone number">
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label for="male">
+                                                                <input type="radio" name="gender"
+                                                                    value="m" id="male">
+                                                                Male
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <label for="female">
+                                                                <input type="radio" name="gender"
+                                                                    value="f" id="female">
+                                                                Female
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 d-flex">
+                                                    <button
+                                                        class="btn btn-primary ms-auto fw-bold px-5" type="submit">
+                                                        Save
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
 
@@ -221,7 +205,7 @@
 
                     <div class="tab-pane fade" id="v-pills-users" role="tabpanel" aria-labelledby="v-pills-users-tab">
                         <div class="container-fluid py-4">
-                            <table class="table table-bordered border-secondary display" id="myTable">
+                            <table class="display" id="myTable">
                                 <thead>
                                     <tr>
                                         <th scope="col">S/N</th>
@@ -237,7 +221,9 @@
                                     </tr>
                                 </thead>
                                 <tbody id="tbody">
-                                    
+                                    <tr>
+                                        
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -258,6 +244,7 @@
         integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.jqueryui.min.js"></script>
     <script src="./script/script.js" type="module"></script>
 </body>
 

@@ -4,16 +4,28 @@ $(document).ready(function () {
 
 let state = $.getJSON("./script/state.json", function (data) {
     return data
-}).then((data) => {
-    let state = data[0];
-    console.log(state);
+}).then((res) => {
+    let data = Object.keys(res[0]);
+    let option = data.map((item) => {
+        return `<option value="${item}">${item}</option>`
+    }).join('');
+    $("#state").append(option);
+
+
+    $("#state").change(function (e) {
+        e.preventDefault();
+
+        let data = Object.values(res[0][$(this).val()]);
+
+        let options = data.map((items) => {
+            return `<option value="${items}">${items}</option>`
+        })
+        $("#lga").html("");
+        $("#lga").append(options);
+    });
 })
 
 
-
-// state.foreach(function (item) {
-//     $("#state").append(`<option value='${item.key}'>${item.key}</option>`);
-// })
 
 
 
@@ -26,8 +38,11 @@ $("#form").submit(function (e) {
     let dob = $("#dob");
     let gender = $("#male");
     let phone = $("#phone");
+    let country = $("#country");
+    let state = $("#state");
+    let lga = $("#lga");
 
-    if (fn !== "" && mn !== "" && ln !== "" && dob !== "" && phone !== "") {
+    if (fn.value !== "" && mn.value !== "" && ln.value !== "" && dob.value !== "" && country.value !== "" && state.value !== "" && lga.value !== "" && phone.value !== "") {
         let row = document.createElement('tr');
         row.innerHTML = `
             <th scope="row">1</th>
@@ -36,19 +51,19 @@ $("#form").submit(function (e) {
             <td>${ln.val()}</td>
             <td>${dob.val()}</td>
             <td>${gender}</td>
-            <td>${country}</td>
-            <td>${state}</td>
-            <td>${lga}</td>
+            <td>${country.val()}</td>
+            <td>${state.val()}</td>
+            <td>${lga.val()}</td>
             <td>${phone.val()}</td>
         `
         $("#tbody").append(row);
         alert("user added")
     } else {
         alert("Please fill all the fields");
+        let num = $("#tbody").childElement.length
+        $("#users").html(num);
     }
 
 
 });
 
-
-$("#users").html();
